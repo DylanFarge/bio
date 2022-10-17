@@ -2,7 +2,10 @@ section {
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 120vh;
+}
+
+h1 {
+    font-size: 4vw;
 }
 
 .hidden {
@@ -16,4 +19,41 @@ section {
     transform: translateX(0);
     filter: blur(0);
     opacity: 1;
+}
+
+.image_crop{
+    width: 20vw;
+    height: 20vw;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: 2s;
+}
+
+.first_image {
+    height: 100%;
+    width: auto;
+}
+
+.routes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.route {
+    height: 7vw;
+    border-radius: 10%;
+    margin:2vw;
+}
+
+.route:nth-child(2){
+    transition-delay: 300ms;
+}
+
+.route:nth-child(3){
+    transition-delay: 600ms;
+}
+
+.route:nth-child(4){
+    transition-delay: 900ms;
 }
