@@ -1,0 +1,19 @@
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 120vh;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(20px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.show {
+    transform: translateX(0);
+    filter: blur(0);
+    opacity: 1;
+}
